@@ -1,5 +1,0 @@
-Driver ID: 1
-Driver Name: Hania
-Car Model: Honda
-Vehicle Wheeler: Two Wheeler
-Parked Starting Time: 2024-11-22 23:46:01.382292

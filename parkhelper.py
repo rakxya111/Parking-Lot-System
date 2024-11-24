@@ -98,6 +98,7 @@ def exit_park():
 
     time_interval = ending_time - start_time
     total_hours = time_interval.seconds // 3600  
+    total_minutes = (time_interval.seconds % 3600) // 60  
  
     
     cursor.execute("SELECT vehicleWheeler from parking_lot where vehicleNum = ? ",a)
@@ -108,17 +109,22 @@ def exit_park():
         print(""" PARKING FAIR FOR TWO WHEELERS :
                   1 HOUR = Rs 10/-
                   AFTER EVERY ADDITIONAL 1 HOUR = Rs 10 + Rs 5/-\n\n """)
-        if(total_hours < 1 ):
+        if(total_hours <= 1 and total_minutes == 0):
             total_price = 10
             cursor.execute("UPDATE parking_lot SET totalPrice = ? WHERE vehicleNum = ? ",(total_price,a))
             conn.commit()
             print(f"The Fair of Parking the Vehicle is : Rs {total_price} /- ONLY .......\n\n\n")
             break
-        elif(total_hours > 1):
+        elif(total_hours >= 1 ):
             total_price = 10 + 5 * total_hours
+
+            if(total_minutes > 0):
+                total_price += 5
+            
+            print(f"The fair of parking the Vehicle is : Rs {total_price}/- ONLY .......\n\n\n")
+            
             cursor.execute("UPDATE parking_lot SET totalPrice = ? WHERE vehicleNum = ? ",(total_price,a))
             conn.commit()
-            print(f"The fair of parking the Vehicle is : Rs {total_price}/- ONLY .......\n\n\n")
             break
 
 

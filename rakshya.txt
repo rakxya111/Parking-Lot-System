@@ -1,5 +1,0 @@
-Driver ID: 1
-Driver Name: rakshya
-Car Model: mercedes
-Vehicle Wheeler: Two Wheeler
-Parked Starting Time: 2024-11-22 22:38:30.509789

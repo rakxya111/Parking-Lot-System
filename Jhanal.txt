@@ -1,5 +1,0 @@
-Driver ID: 3
-Driver Name: Ghanak
-Car Model: Honda
-Vehicle Wheeler: Two Wheeler
-Parked Starting Time: 2024-11-22 23:06:26.008638
