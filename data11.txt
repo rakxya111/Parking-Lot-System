@@ -1,0 +1,5 @@
+Driver ID: 2
+Driver Name: roman
+Car Model: royce
+Parked Starting Time: 2024-11-21 13:19:58.643072
+Parked EXIT Time: 2024-11-21 22:13:32.867352

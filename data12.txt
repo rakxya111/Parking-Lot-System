@@ -1,0 +1,5 @@
+Driver ID: 3
+Driver Name: ritika
+Car Model: hyundai
+Parked Starting Time: 2024-11-21 13:20:10.331299
+Parked EXIT Time: 2024-11-21 22:13:39.345404
